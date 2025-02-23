@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { products, categories } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
+import { useStore } from '../store/useStore';
 
 export const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [priceRange, setPriceRange] = useState<number>(50);
-  const [searchQuery, setSearchQuery] = useState<string>('');
+  const { searchQuery, setSearchQuery } = useStore();
 
   const filteredProducts = products.filter((product) => {
     const matchesCategory = selectedCategory ? product.category === selectedCategory : true;
     const matchesPrice = product.price <= priceRange;
-    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         product.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch =
+      product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesPrice && matchesSearch;
   });
 
@@ -27,7 +29,7 @@ export const Categories = () => {
                 onClick={() => setSelectedCategory('')}
                 className={`block w-full text-left px-3 py-2 rounded ${
                   selectedCategory === ''
-                    ? 'bg-primary text-white'
+                    ? 'bg-green-600 text-white'
                     : 'hover:bg-gray-100 dark:hover:bg-gray-700'
                 }`}
               >
@@ -39,7 +41,7 @@ export const Categories = () => {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`block w-full text-left px-3 py-2 rounded ${
                     selectedCategory === category.id
-                      ? 'bg-primary text-white'
+                      ? 'bg-green-600 text-white'
                       : 'hover:bg-gray-100 dark:hover:bg-gray-700'
                   }`}
                 >
@@ -57,7 +59,7 @@ export const Categories = () => {
               max="50"
               value={priceRange}
               onChange={(e) => setPriceRange(Number(e.target.value))}
-              className="w-full"
+              className="w-full accent-green-600"
             />
           </div>
 
@@ -68,7 +70,7 @@ export const Categories = () => {
               placeholder="Buscar productos..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-600 dark:bg-gray-700 dark:text-white dark:border-gray-600"
             />
           </div>
         </div>

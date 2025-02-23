@@ -4,6 +4,10 @@ import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { Categories } from './pages/Categories';
 import { ProductDetail } from './pages/ProductDetail';
+import { Checkout } from './pages/Checkout';
+import { Register } from './pages/Register'; // Nueva página
+import { Login } from './pages/Login'; // Nueva página
+import { Account } from './pages/Account'; // Nueva página
 import { useStore } from './store/useStore';
 
 function App() {
@@ -26,7 +30,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/categories" element={<Categories />} />
             <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/account" element={<div>Account (Coming soon)</div>} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/account" element={<Account />} />
             <Route path="/contact" element={<div>Contact (Coming soon)</div>} />
           </Routes>
         </main>
