@@ -29,7 +29,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </Link>
         <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{product.description.slice(0, 100)}...</p>
         <div className="flex items-center justify-between">
-          <span className="text-xl font-bold text-green-600 dark:text-green-400">${product.price.toFixed(2)}</span>
+        <span className="text-xl font-bold text-green-600 dark:text-green-400">${product.price.toLocaleString('es-CO')}</span>
           {cartItem ? (
             <div className="flex items-center gap-2">
               <span className="text-sm text-gray-600 dark:text-gray-300">({cartItem.quantity})</span>

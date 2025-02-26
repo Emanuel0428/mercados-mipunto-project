@@ -5,7 +5,7 @@ import { useStore } from '../store/useStore';
 
 export const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('');
-  const [priceRange, setPriceRange] = useState<number>(50);
+  const [priceRange, setPriceRange] = useState<number>(50000); // Ajustado a COP
   const { searchQuery, setSearchQuery } = useStore();
 
   const filteredProducts = products.filter((product) => {
@@ -52,11 +52,12 @@ export const Categories = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-3">Precio máximo: ${priceRange}</h3>
+            <h3 className="text-lg font-semibold mb-3">Precio máximo: ${priceRange.toLocaleString('es-CO')}</h3>
             <input
               type="range"
               min="0"
-              max="50"
+              max="50000" // Ajustado a COP (máximo basado en el precio más alto: $45,000)
+              step="1000" // Paso de $1,000 para mejor granularidad
               value={priceRange}
               onChange={(e) => setPriceRange(Number(e.target.value))}
               className="w-full accent-green-600"

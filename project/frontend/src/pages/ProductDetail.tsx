@@ -45,7 +45,7 @@ export const ProductDetail = () => {
 
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="space-y-6">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-white">{product.name}</h1>
-          <p className="text-xl text-green-600 dark:text-green-400 font-bold">${product.price.toFixed(2)}</p>
+          <p className="text-xl text-green-600 dark:text-green-400 font-bold">${product.price.toLocaleString('es-CO')}</p>
           <p className="text-gray-600 dark:text-gray-300">{product.description}</p>
           <div className="flex items-center space-x-4">
             <span className="text-gray-600 dark:text-gray-300">Disponibles: {product.stock}</span>
@@ -102,7 +102,7 @@ export const ProductDetail = () => {
                 <img src={relatedProduct.image} alt={relatedProduct.name} className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">{relatedProduct.name}</h3>
-                  <p className="text-green-600 dark:text-green-400 font-bold">${relatedProduct.price.toFixed(2)}</p>
+                  <p className="text-green-600 dark:text-green-400 font-bold">${relatedProduct.price.toLocaleString('es-CO')}</p>
                   <button
                     onClick={() => navigate(`/product/${relatedProduct.id}`)}
                     className="btn-primary w-full mt-4"
