@@ -1,6 +1,5 @@
-// frontend/src/data/products.ts
 export const products = [
-  // Productos originales
+
   {
     id: '1',
     name: 'Aguacate Hass',
@@ -61,7 +60,7 @@ export const products = [
     price: 20000,
     description: 'Pechuga de pollo fresca y sin hueso (precio por kg).',
     category: 'carnes',
-    image: 'https://images.unsplash.com/photo-1600891964091-44b96408a989?auto=format&fit=crop&q=80&w=500',
+    image: 'https://images.pexels.com/photos/28439616/pexels-photo-28439616/free-photo-of-raw-chicken-breast-on-wooden-cutting-board.png?auto=format&fit=crop&q=80&w=500',
     stock: 25
   },
   {
@@ -70,7 +69,7 @@ export const products = [
     price: 45000,
     description: 'Carne de res de alta calidad para asados o guisos (precio por kg).',
     category: 'carnes',
-    image: 'https://images.unsplash.com/photo-1604908177630-bb6dfbdfc3de?auto=format&fit=crop&q=80&w=500',
+    image: 'https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg?auto=format&fit=crop&q=80&w=500',
     stock: 40
   },
   {
@@ -79,7 +78,7 @@ export const products = [
     price: 10000,
     description: 'Jugo de naranja recién exprimido, sin conservantes (precio por litro).',
     category: 'bebidas',
-    image: 'https://images.unsplash.com/photo-1603810202527-030a82cd8634?auto=format&fit=crop&q=80&w=500',
+    image: 'https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=format&fit=crop&q=80&w=500',
     stock: 60
   },
   {
@@ -87,7 +86,7 @@ export const products = [
     name: 'Café Molido',
     price: 25000,
     description: 'Café molido 100% arábica, ideal para preparar en casa (precio por 500g).',
-    category: 'bebidas',
+    category: 'granos',
     image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=500',
     stock: 35
   },
@@ -97,7 +96,7 @@ export const products = [
     price: 3000,
     description: 'Zanahorias frescas y crujientes, ricas en betacaroteno (precio por kg).',
     category: 'verduras',
-    image: 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&q=80&w=500',
+    image: 'https://media.c5n.com/p/3a25eff1661d6c74c11c7beccbbda598/adjuntos/326/imagenes/000/190/0000190504/790x0/smart/zanahorias.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 80
   },
   {
@@ -106,10 +105,10 @@ export const products = [
     price: 8000,
     description: 'Yogur natural sin azúcar, ideal para desayunos y postres (precio por litro).',
     category: 'lacteos',
-    image: 'https://images.unsplash.com/photo-1567436180291-478b67c0d3be?auto=format&fit=crop&q=80&w=500',
+    image: 'https://images.pexels.com/photos/414262/pexels-photo-414262.jpeg?auto=format&fit=crop&q=80&w=500',
     stock: 45
   },
-  // Nuevos productos
+
   {
     id: '13',
     name: 'Manzanas Rojas',
@@ -125,16 +124,16 @@ export const products = [
     price: 4000,
     description: 'Papaya Maradol dulce y jugosa (precio por kg).',
     category: 'frutas',
-    image: 'https://images.unsplash.com/photo-1561677977-324b96dbff17?auto=format&fit=crop&q=80&w=500',
+    image: 'https://images.pexels.com/photos/4113831/pexels-photo-4113831.jpeg?auto=format&fit=crop&q=80&w=500',
     stock: 40
   },
   {
     id: '15',
-    name: 'Mango Tommy',
+    name: 'Mango',
     price: 6000,
     description: 'Mango Tommy maduro y sabroso (precio por kg).',
     category: 'frutas',
-    image: 'https://images.unsplash.com/photo-1601494076540-2d3fd37e4987?auto=format&fit=crop&q=80&w=500',
+    image: 'https://images.pexels.com/photos/2363345/pexels-photo-2363345.jpeg?auto=format&fit=crop&q=80&w=500',
     stock: 50
   },
   {
@@ -143,7 +142,7 @@ export const products = [
     price: 2500,
     description: 'Cebolla cabezona fresca para cocinar (precio por kg).',
     category: 'verduras',
-    image: 'https://images.unsplash.com/photo-1618512496248-a07fe5654c07?auto=format&fit=crop&q=80&w=500',
+    image: 'https://media.surtiplaza.co/dimen/7000163.png?auto=format&fit=crop&q=80&w=500',
     stock: 90
   },
   {
@@ -152,7 +151,7 @@ export const products = [
     price: 3500,
     description: 'Papa criolla pequeña y deliciosa (precio por kg).',
     category: 'verduras',
-    image: 'https://images.unsplash.com/photo-1596550341175-9f759d65b3c2?auto=format&fit=crop&q=80&w=500',
+    image: 'https://de-origen.es/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-20-at-12.37.04.jpeg?auto=format&fit=crop&q=80&w=500',
     stock: 70
   },
   {
@@ -161,7 +160,7 @@ export const products = [
     price: 2000,
     description: 'Lechuga romana fresca y crujiente (precio por unidad).',
     category: 'verduras',
-    image: 'https://images.unsplash.com/photo-1618076240776-51429091b680?auto=format&fit=crop&q=80&w=500',
+    image: 'https://frutasolivar.com/wp-content/uploads/2021/01/lechuga-tipo-romana.jpg.webp?auto=format&fit=crop&q=80&w=500',
     stock: 30
   },
   {
@@ -170,7 +169,7 @@ export const products = [
     price: 15000,
     description: 'Queso campesino fresco y suave (precio por 500g).',
     category: 'lacteos',
-    image: 'https://images.unsplash.com/photo-1607009634045-0a6b6238589f?auto=format&fit=crop&q=80&w=500',
+    image: 'https://static.wixstatic.com/media/5419d5_77118f281710473781bf2b0ae9b26cd7~mv2.jpg/v1/fill/w_520,h_347,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5419d5_77118f281710473781bf2b0ae9b26cd7~mv2.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 25
   },
   {
@@ -179,7 +178,7 @@ export const products = [
     price: 8000,
     description: 'Mantequilla cremosa para untar (precio por 250g).',
     category: 'lacteos',
-    image: 'https://images.unsplash.com/photo-1589984662645-23f94c26720b?auto=format&fit=crop&q=80&w=500',
+    image: 'https://jordibordas.com/wp-content/uploads/2023/09/mantequilla.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 40
   },
   {
@@ -188,7 +187,7 @@ export const products = [
     price: 7000,
     description: 'Crema de leche ideal para postres (precio por 200ml).',
     category: 'lacteos',
-    image: 'https://images.unsplash.com/photo-1556908138-77b5dfd8d2f8?auto=format&fit=crop&q=80&w=500',
+    image: 'https://solofruver.com/wp-content/uploads/2021/06/crema-de-leche-alqueria.png?auto=format&fit=crop&q=80&w=500',
     stock: 35
   },
   {
@@ -197,7 +196,7 @@ export const products = [
     price: 4500,
     description: 'Pan de yuca suave y esponjoso (precio por paquete de 6).',
     category: 'panaderia',
-    image: 'https://images.unsplash.com/photo-1606755962775-0a6b6238589f?auto=format&fit=crop&q=80&w=500',
+    image: 'https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2019/10/18130552/RFB-1610-2-pandeyuca.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 50
   },
   {
@@ -206,7 +205,7 @@ export const products = [
     price: 3000,
     description: 'Arepa de maíz tradicional (precio por paquete de 5).',
     category: 'panaderia',
-    image: 'https://images.unsplash.com/photo-1608500219756-d82d762d5e15?auto=format&fit=crop&q=80&w=500',
+    image: 'https://domicilios.comidasantandereana.com/cdn/shop/products/Tradicionalarepademaizpelado_800x.png?v=1616456192?auto=format&fit=crop&q=80&w=500',
     stock: 60
   },
   {
@@ -215,7 +214,7 @@ export const products = [
     price: 2500,
     description: 'Croissant crujiente y mantecoso (precio por unidad).',
     category: 'panaderia',
-    image: 'https://images.unsplash.com/photo-1530610476181-d8b3a8a7278e?auto=format&fit=crop&q=80&w=500',
+    image: 'https://bajanews.mx/uploads/images/posts/811129779679bc1499bb78.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 30
   },
   {
@@ -224,7 +223,7 @@ export const products = [
     price: 18000,
     description: 'Carne molida fresca para hamburguesas o guisos (precio por kg).',
     category: 'carnes',
-    image: 'https://images.unsplash.com/photo-1593434577838-9f2f2a8a7db8?auto=format&fit=crop&q=80&w=500',
+    image: 'https://canadabeef.mx/wp-content/uploads/2020/09/carne_molida_hamburguesas-1-495x371.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 45
   },
   {
@@ -233,7 +232,7 @@ export const products = [
     price: 22000,
     description: 'Costilla de cerdo jugosa para asar (precio por kg).',
     category: 'carnes',
-    image: 'https://images.unsplash.com/photo-1603048297239-8d43e9e5e8ea?auto=format&fit=crop&q=80&w=500',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRoU-Jcxs_m5oAN2szQtt_-sa-41hKu_wO0w&s?auto=format&fit=crop&q=80&w=500',
     stock: 20
   },
   {
@@ -242,7 +241,7 @@ export const products = [
     price: 15000,
     description: 'Tilapia fresca para freír o asar (precio por kg).',
     category: 'carnes',
-    image: 'https://images.unsplash.com/photo-1599816147276-5b5b0c680b3b?auto=format&fit=crop&q=80&w=500',
+    image: 'https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/filete_de_tilapia.jpg?auto=format&fit=cruaop&q=80&w=500',
     stock: 35
   },
   {
@@ -251,7 +250,7 @@ export const products = [
     price: 2500,
     description: 'Agua con gas refrescante (precio por 1.5L).',
     category: 'bebidas',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=500',
+    image: 'https://olimpica.vtexassets.com/arquivos/ids/1296591/7702609005488.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 80
   },
   {
@@ -260,7 +259,7 @@ export const products = [
     price: 3500,
     description: 'Cerveza Águila clásica (precio por 330ml).',
     category: 'bebidas',
-    image: 'https://images.unsplash.com/photo-1595670834557-249f2e3c0e65?auto=format&fit=crop&q=80&w=500',
+    image: 'https://domicilios24siete.com/wp-content/uploads/2023/11/1000161393.jpg?auto=format&fit=crop&q=80&w=500',
     stock: 100
   },
   {
@@ -269,7 +268,7 @@ export const products = [
     price: 4000,
     description: 'Té helado refrescante (precio por 500ml).',
     category: 'bebidas',
-    image: 'https://images.unsplash.com/photo-1556679343-c7306c93c8e7?auto=format&fit=crop&q=80&w=500',
+    image: 'https://lavaquita.co/cdn/shop/files/supermercados_la_vaquita_supervaquita_MR_TEA_1.5L_LIMON_1024x1024.png?v=1699541116?auto=format&fit=crop&q=80&w=500',
     stock: 50
   },
   {
@@ -278,7 +277,7 @@ export const products = [
     price: 5000,
     description: 'Arroz blanco de grano largo (precio por kg).',
     category: 'granos',
-    image: 'https://images.unsplash.com/photo-1586201375761-52aa8003809b?auto=format&fit=crop&q=80&w=500',
+    image: 'https://jumbocolombiaio.vtexassets.com/arquivos/ids/186339/7702511000427.jpg?v=637813981903130000?auto=format&fit=crop&q=80&w=500',
     stock: 70
   },
   {
@@ -287,7 +286,7 @@ export const products = [
     price: 6000,
     description: 'Frijoles rojos secos para guisos (precio por kg).',
     category: 'granos',
-    image: 'https://images.unsplash.com/photo-1603046899799-4b2e8703c0c0?auto=format&fit=crop&q=80&w=500',
+    image: 'https://exitocol.vtexassets.com/arquivos/ids/25566869/Frijol-Diana-Cargamanto-Rojo-DIANA-1000-gr-3533993_a.jpg?v=638675318906700000?auto=format&fit=crop&q=80&w=500',
     stock: 60
   }
 ];
